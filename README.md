@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 # geojson-hash-comparator
 geojson-hash-comparator
-=======
 # 🗺️ GeoJSON Hash Comparator (Geo Hash)
 
 A powerful, secure, and fast client-side tool to generate SHA256 hashes for GeoJSON files and compare them for data integrity.
@@ -65,4 +63,3 @@ Made with ❤️ by [Vaibhav Devkate](https://vaibhavvdevkate.com/)
 ## 📄 License
 
 © 2025 Vaibhav Devkate. All rights reserved.
->>>>>>> master
