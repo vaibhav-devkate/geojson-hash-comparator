@@ -1,65 +1,36 @@
-# geojson-hash-comparator
-geojson-hash-comparator
-# 🗺️ GeoJSON Hash Comparator (Geo Hash)
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A powerful, secure, and fast client-side tool to generate SHA256 hashes for GeoJSON files and compare them for data integrity.
+## Getting Started
 
-**Live Demo:** [geohash.vaibhavvdevkate.com](https://geohash.vaibhavvdevkate.com/)
+First, run the development server:
 
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## 🚀 Features
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- **SHA256 Hashing:** Generate unique cryptographic hashes for any GeoJSON file.
-- **File Comparison:** Compare two GeoJSON files to verify if they are identical.
-- **Data Integrity:** Ensure your geographic data hasn't been modified or corrupted.
-- **Client-Side Processing:** Your data never leaves your browser. Fast and secure.
-- **Mobile Friendly:** Fully responsive design that works beautifully on all devices.
-- **Detailed Insights:** View file sizes, feature counts, and comparison results.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## 🛠️ Tech Stack
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-- **Vite:** Next-generation frontend tooling.
-- **TypeScript:** For type-safe development.
-- **Vanilla CSS:** Custom, premium design with glassmorphism and smooth animations.
-- **Subtle Micro-animations:** Enhanced user experience with interactive elements.
+## Learn More
 
-## 📦 Installation
+To learn more about Next.js, take a look at the following resources:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/vaibhav-devkate/geojson-hash-comparator.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd geojson-hash-comparator
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Start the development server:
-   ```bash
-   npm run dev
-   ```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## 📖 How to Use
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-1. **Upload Files:** Select one or two GeoJSON files using the file inputs.
-2. **Generate Hashes:** Click "Generate Hash(es)" to create SHA256 hashes.
-3. **Compare (Optional):** If two files are uploaded, use "Compare Files" to check if they're identical.
-4. **View Results:** See detailed comparison results including file sizes and feature counts.
+## Deploy on Vercel
 
-## 🔐 Privacy
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-All processing happens locally in your browser. No data is uploaded to any server, ensuring maximum privacy for your geographic datasets.
-
-## 👨‍💻 Author
-
-Made with ❤️ by [Vaibhav Devkate](https://vaibhavvdevkate.com/)
-
-- [GitHub](https://github.com/vaibhav-devkate)
-- [LinkedIn](https://linkedin.com/in/vaibhav-devkate)
-
-## 📄 License
-
-© 2025 Vaibhav Devkate. All rights reserved.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

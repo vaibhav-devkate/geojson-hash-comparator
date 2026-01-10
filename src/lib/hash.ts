@@ -1,27 +1,19 @@
 // Browser-compatible hash functions using Web Crypto API
 export const generateFileHash = async (buffer: ArrayBuffer): Promise<string> => {
-  const startTime = performance.now();
   const hashBuffer = await crypto.subtle.digest('SHA-256', buffer);
   const hash = Array.from(new Uint8Array(hashBuffer))
     .map(b => b.toString(16).padStart(2, '0'))
     .join('');
-  const endTime = performance.now();
-  
-  console.log(`🔒 Hash generated in ${(endTime - startTime).toFixed(2)}ms for ${(buffer.byteLength / 1024 / 1024).toFixed(2)}MB file`);
   return hash;
 };
 
 export const generateStringHash = async (content: string): Promise<string> => {
-  const startTime = performance.now();
   const encoder = new TextEncoder();
   const data = encoder.encode(content);
   const hashBuffer = await crypto.subtle.digest('SHA-256', data);
   const hash = Array.from(new Uint8Array(hashBuffer))
     .map(b => b.toString(16).padStart(2, '0'))
     .join('');
-  const endTime = performance.now();
-  
-  console.log(`🔒 Hash generated in ${(endTime - startTime).toFixed(2)}ms for ${(content.length / 1024).toFixed(2)}KB content`);
   return hash;
 };
 
@@ -45,12 +37,10 @@ export const compareGeoJSON = async (content1: string, content2: string): Promis
   const differences: string[] = [];
   
   if (!contentMatch) {
-    // Try to parse and compare as JSON
     try {
       const json1 = JSON.parse(content1);
       const json2 = JSON.parse(content2);
       
-      // Basic comparison checks
       if (json1.type !== json2.type) {
         differences.push(`Different types: ${json1.type} vs ${json2.type}`);
       }
@@ -59,7 +49,6 @@ export const compareGeoJSON = async (content1: string, content2: string): Promis
         differences.push(`Different feature count: ${json1.features?.length || 0} vs ${json2.features?.length || 0}`);
       }
       
-      // More detailed comparison could be added here
       if (JSON.stringify(json1) !== JSON.stringify(json2)) {
         differences.push('Content differs when parsed as JSON');
       }
