@@ -64,7 +64,7 @@ export function InfoModal({ isOpen, onClose }: InfoModalProps) {
                   How It Works
                 </h3>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  <InfoItem icon={<CheckCircle2 size={16} />} text="Upload one or two GeoJSON files" />
+                  <InfoItem icon={<CheckCircle2 size={16} />} text="Upload two GeoJSON files" />
                   <InfoItem icon={<CheckCircle2 size={16} />} text="Generate SHA256 hashes instantly" />
                   <InfoItem icon={<CheckCircle2 size={16} />} text="Compare files byte-for-byte" />
                   <InfoItem icon={<CheckCircle2 size={16} />} text="View detailed comparison results" />
