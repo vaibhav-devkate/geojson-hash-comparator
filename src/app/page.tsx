@@ -146,7 +146,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="mt-20 py-8 w-full border-t border-gray-100 flex flex-col items-center gap-4">
         <div className="flex items-center gap-6 text-gray-400">
-          <a href="#" className="hover:text-primary transition-colors flex items-center gap-2 text-sm font-medium">
+          <a href="https://github.com/vaibhav-devkate/geojson-hash-comparator" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-2 text-sm font-medium">
             <Github size={18} />
             Source Code
           </a>
